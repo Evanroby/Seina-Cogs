@@ -55,7 +55,7 @@ from ..views import ConfirmationView
 
 TAG_RE: Pattern[str] = re.compile(r"(?i)(\[p\])?\btag'?s?\b")
 
-DOCS_URL: Final[str] = "https://cogs.jap4n.org/tags"
+DOCS_URL: Final[str] = "https://cogs.jap4n.org/tags/"
 
 log: logging.Logger = logging.getLogger("red.seina.tags.commands")
 
@@ -249,7 +249,7 @@ class Commands(MixinMeta):
         """
         Add a tag with TagScript.
 
-        [Tag usage guide](https://cogs.jap4n.org/tags/)
+        [Tag usage guide](https://cogs.jap4n.org/tags/blocks/)
 
         **Example:**
         `[p]tag add lawsofmotion {embed(title):Newton's Laws of motion}
